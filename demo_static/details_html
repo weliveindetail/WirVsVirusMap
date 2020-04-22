@@ -1,4 +1,4 @@
-<div id="charite" style="margin: 1rem 0;">
+<div id="charite">
   <img src="https://immunhelden.de/images/clinic.png" alt="clinic"
        style="height: 2rem; float: left; margin-right: 5px;">
   <b>Charité</b><br>
@@ -9,12 +9,13 @@
   </p>
 </div>
 <div id="sprachsalon">
-  <img src="https://images.myguide-cdn.com/berlin/companies/sprachsalon-berlin/large/sprachsalon-berlin-133162.jpg"><br>
+  <img src="https://images.myguide-cdn.com/berlin/companies/sprachsalon-berlin/large/sprachsalon-berlin-133162.jpg"
+       style="width:100%;"><br>
   <a href="mailto:kontakt@sprach.salon">Schreibt uns eine E-Mail<a>
 </div>
 <div id="kita_lima">
   Hallo, wir sind die <b>Kita Lima</b> und wir suchen ...<br>
-  <form>
-    <label style="padding: 2rem;">Hier entsteht bald unser Kontaktformular</label>
+  <form style="padding: 1rem; background: #eee; text-align: center;">
+    Hier entsteht bald unser Kontaktformular
   </form>
 </div>

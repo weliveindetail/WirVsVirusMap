@@ -64,7 +64,7 @@
       overflow: scroll;
     }
     #osm-map-details div {
-      padding: 0 1rem;
+      padding: 1rem;
       box-sizing: border-box;
     }
     #osm-map-pane-close {
@@ -363,13 +363,13 @@
       return false;
     }
 
-    function parsePlatforms(params) {
-      var rawNameUrlPairs = params.hasOwnProperty("platforms")
-                          ? params.platforms.split(',')
-                          : [ 'ImmunHelden.de|https://immunhelden.de/map' ];
+    // TODO: Only for demo purpose
+    const defaultPlatformsStr = 'Demo ImmunHelden.de|https://immunhelden.de/map,Demo Static|https://weliveindetail.github.io/WirVsVirusMap/demo_static'
 
-      return rawNameUrlPairs.map(function(pair) {
-        var nameUrlArray = pair.split('|');
+    function parsePlatforms(params) {
+      const platformsStr = decodeURIComponent(params.platforms || defaultPlatformsStr);
+      return platformsStr.split(',').map(function(pair) {
+        const nameUrlArray = pair.split('|');
         return { "name": nameUrlArray[0], "url": nameUrlArray[1] };
       });
     }
@@ -440,7 +440,7 @@
     }
 
     var params = parseUrlParams(window.location.href);
-    var initialZoom = params.hasOwnProperty("zoom") ? params.zoom : 6;
+    var initialZoom = params.zoom || 6;
     var interactive = params.hasOwnProperty("interactive") ? parseBool(params.interactive) : true;
     var showHeader = params.hasOwnProperty("header") ? parseBool(params.header) : true;
     var platforms = parsePlatforms(params);
@@ -477,7 +477,7 @@
         popupAnchor: [1, -34]
       }),
       new L.Icon({
-        iconUrl: 'data/demo_static/marker-icon-2x-orange.png',
+        iconUrl: 'images/marker-icon-2x-orange.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34]
@@ -611,8 +611,7 @@
         $("#osm-map-details").html(regionInfo.cachedDetails);
       }
       else {
-        // TODO: use actual ids for regions
-        // TODO: only query platforms that have items for these IDs!
+        // Select platforms that have IDs for the region and request details.
         const contentReady = [];
         const idxs = [];
         const ids = regionInfo.idsByPlatform;
@@ -623,24 +622,26 @@
           }
         }
 
+        // We should have bailed out early in this case!
         if (contentReady.length == 0) {
           console.error("[Internal] IDs by platform cannot be empty at this point", regionInfo);
           return;
         }
 
+        // Once all platforms responded, display their content.
         Promise.all(contentReady).then(
           function(htmls) {
-            const snippets = [];
+            // TODO: Select the relevant DIVs (for static hosting, we always get all details)
+            //const snippets = [];
+            //for (let i = 0; i < idxs.length; i++) {
+            //  const platformIdx = idxs[i];
+            //  for (const id of regionInfo.idsByPlatform[platformIdx]) {
+            //    const elem = $('#' + id, '<div>' + htmls[i] + '</div>');
+            //    snippets.push(elem.html());
+            //  }
+            //}
             regionInfo.cachedDetails = htmls;
-            for (let i = 0; i < idxs.length; i++) {
-              const platformIdx = idxs[i];
-              for (const id of regionInfo.idsByPlatform[platformIdx]) {
-                const elem = $('#' + id, '<div>' + htmls[i] + '</div>');
-                snippets.push(elem.html());
-              }
-            }
-            console.log(snippets);
-            $("#osm-map-details").html(snippets.join('<hr>'));
+            $("#osm-map-details").html(htmls);
           },
           err => closeDetails()
         );
@@ -675,19 +676,22 @@
       pinsReady.push(loadJson(platforms[i].url + '/pins').then(pinsById => {
         for (var id in pinsById) {
           if (isValidPinInfo(pinsById[id])) {
-            var pin = {
+            const pin = {
               latlng: L.latLng(pinsById[id].latlng),
               type: pinsById[id].type,
               title: pinsById[id].title,
               platformIdx: i,
+              marker: null,
               popup: null,
               elem: null
             };
-            var clickHandler = "viewDetails('" + id + "');";
-            var content = renderPreviewHtml(pin.title, clickHandler);
-            var icon = defaultPinIcons[pin.type]; // TODO: customizable icons
-            pin.popup = L.marker(pin.latlng, { "icon": icon }).bindPopup(content);
+            const clickHandler = "viewDetails('" + id + "');";
+            const content = renderPreviewHtml(pin.title, clickHandler);
+            const icon = defaultPinIcons[pin.type]; // TODO: customizable icons
+            pin.marker = L.marker(pin.latlng, { "icon": icon });
+            pin.popup = pin.marker.bindPopup(content);
             pin.elem = $(pin.popup.addTo(map).getElement());
+            pin.marker.on('click', function() { eval(clickHandler); });
             allPinsById[id] = pin;
           }
         }
@@ -766,6 +770,7 @@
           var clickHandler = "viewDetailsR('" + layer.feature.properties.ags + "');";
           var popupContent = renderPreviewHtml(region.name, clickHandler);
           L.popup().setLatLng(region.center).setContent(popupContent).openOn(map);
+          eval(clickHandler);
         });
       });
 
@@ -888,9 +893,11 @@
     });
 
     Promise.all(pinsReady.concat([regionsReady])).then(function() {
-      if (params.hasOwnProperty("select")) {
-        selectId(params.select);
+      // TODO: Only for demo purpose!
+      if (!params.hasOwnProperty("select")) {
+        params.select = "-M3l5s6sP2Jv42nq16rl";
       }
+      selectId(params.select);
     });
 
     function togglePlatform(checkbox, platformIdx) {
