@@ -1,0 +1,60 @@
+<div id="berlin-charite-mitte">
+  <div class="institutions__data" style="">
+    <div class="institutions__chunk institutions__contact">
+      ZTB Zentrum für Transfusionsmedizin und Zelltherapie Berlin gemeinnützige GmbH<br>
+      RKP-Spende (COVID-19) Mail: RKP-Spende@charite.de
+    </div>
+    <div class="institutions__chunk institutions__address">
+      Schumannstraße 22 <br>10117 Berlin
+    </div>
+    <div class="institutions__chunk institutions__phone">
+      <span class="icon--contact-phone_s"></span>
+      <a href="tel://030-450525167" tabindex="0">030-450525167</a>
+    </div>
+    <div class="institutions__chunk institutions__position institutions__url">
+      <span class="icon--contact_website_s"></span>
+      <a title="Öffnet externen Link im neuen Fenster" rel="noopener noreferrer nofollow" target="_blank" href="https://www.ztb-blutspende.de/" tabindex="0">
+        https://www.ztb-blutspende.de/
+      </a>
+    </div>
+  </div>
+</div>
+<div id="dortmund-klinikumdo">
+  <div class="institutions__data" style="">
+    <div class="institutions__chunk institutions__contact">
+      Institut für Transfusionsmedizin (ITLM)<br>
+      RKP-Spende (COVID-19) Mail: blutspende@klinikumdo.de<br>
+      RKP-Spende (COVID-19) Telefon: 0231 - 953 19620
+    </div>
+    <div class="institutions__chunk institutions__address">
+      Alexanderstr. 6 - 10 <br>44137 Dortmund
+    </div>
+    <div class="institutions__chunk institutions__phone">
+      <span class="icon--contact-phone_s"></span>
+      <a href="tel://0231-95319999" tabindex="0">0231-95319999</a>
+    </div>
+    <div class="institutions__chunk institutions__position institutions__url">
+      <span class="icon--contact_website_s"></span>
+      <a title="Öffnet externen Link im neuen Fenster" rel="noopener noreferrer nofollow" target="_blank" href="http://www.blutspendedo.de/" tabindex="0">
+        www.blutspendedo.de/
+      </a>
+    </div>
+  </div>
+</div>
+<div id="muenster-ukm">
+  <div class="institutions__data" style="">
+    <div class="institutions__chunk institutions__contact">
+      UKM Blutspende<br>
+      RKP-Spende (COVID-19) Mail: COVID19.Plasma@ukmuenster.de
+    </div>
+    <div class="institutions__chunk institutions__address">
+      Albert-Schweitzer-Campus 1 / Gebäude D 11 <br>48149 Münster
+    </div>
+    <div class="institutions__chunk institutions__position institutions__url">
+      <span class="icon--contact_website_s"></span>
+      <a title="Öffnet externen Link im neuen Fenster" rel="noopener noreferrer nofollow" target="_blank" href="http://www.ukm-blutspende.de" tabindex="0">
+        www.ukm-blutspende.de
+      </a>
+    </div>
+  </div>
+</div>

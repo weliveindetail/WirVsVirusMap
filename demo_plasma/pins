@@ -1,0 +1,17 @@
+{
+  "berlin-charite-mitte": {
+    "type": 0,
+    "title": "Charité - Campus Mitte",
+    "latlng": [52.523601, 13.377926]
+  },
+  "muenster-ukm": {
+    "type": 0,
+    "title": "UKM Blutspende",
+    "latlng": [51.961671, 7.600466]
+  },
+  "dortmund-klinikumdo": {
+    "type": 0,
+    "title": "BlutspendeDo",
+    "latlng": [51.508464, 7.454909]
+  }
+}
