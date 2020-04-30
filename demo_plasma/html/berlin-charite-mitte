@@ -1,0 +1,19 @@
+<div class="institutions__data" style="">
+  <div class="institutions__chunk institutions__contact">
+    ZTB Zentrum für Transfusionsmedizin und Zelltherapie Berlin gemeinnützige GmbH<br>
+    RKP-Spende (COVID-19) Mail: RKP-Spende@charite.de
+  </div>
+  <div class="institutions__chunk institutions__address">
+    Schumannstraße 22 <br>10117 Berlin
+  </div>
+  <div class="institutions__chunk institutions__phone">
+    <span class="icon--contact-phone_s"></span>
+    <a href="tel://030-450525167" tabindex="0">030-450525167</a>
+  </div>
+  <div class="institutions__chunk institutions__position institutions__url">
+    <span class="icon--contact_website_s"></span>
+    <a title="Öffnet externen Link im neuen Fenster" rel="noopener noreferrer nofollow" target="_blank" href="https://www.ztb-blutspende.de/" tabindex="0">
+      https://www.ztb-blutspende.de/
+    </a>
+  </div>
+</div>

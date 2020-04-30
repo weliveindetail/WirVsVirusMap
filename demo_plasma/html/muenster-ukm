@@ -1,0 +1,15 @@
+<div class="institutions__data" style="">
+  <div class="institutions__chunk institutions__contact">
+    UKM Blutspende<br>
+    RKP-Spende (COVID-19) Mail: COVID19.Plasma@ukmuenster.de
+  </div>
+  <div class="institutions__chunk institutions__address">
+    Albert-Schweitzer-Campus 1 / Gebäude D 11 <br>48149 Münster
+  </div>
+  <div class="institutions__chunk institutions__position institutions__url">
+    <span class="icon--contact_website_s"></span>
+    <a title="Öffnet externen Link im neuen Fenster" rel="noopener noreferrer nofollow" target="_blank" href="http://www.ukm-blutspende.de" tabindex="0">
+      www.ukm-blutspende.de
+    </a>
+  </div>
+</div>

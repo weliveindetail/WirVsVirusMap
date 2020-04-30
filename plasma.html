@@ -599,14 +599,13 @@
         $("#osm-map-details").html(pinInfo.cachedDetails);
       }
       else {
-        loadPlain(platforms[pinInfo.platformIdx].url + "/details_html?ids=" + id).then(
+        loadPlain(platforms[pinInfo.platformIdx].url + "/html/" + id).then(
           html => {
             // TODO: It should be sufficient if the id property of
             // the div CONTAINS the given id!
-            const snippet = $('#' + id, '<div>' + html + '</div>');
-            console.log(snippet);
-            $("#osm-map-details").html(snippet);
-            pinInfo.cachedDetails = snippet;
+            console.log(html);
+            $("#osm-map-details").html(html);
+            pinInfo.cachedDetails = html;
           },
           err => closeDetails()
         );
@@ -650,7 +649,8 @@
         const ids = regionInfo.idsByPlatform;
         for (let i = 0; i < ids.length; i++) {
           if (ids[i] && ids[i].hasOwnProperty('length') && ids[i].length > 0) {
-            contentReady.push(loadPlain(platforms[i].url + "/details_html?ids=" + ids[i].join(',')));
+            contentReady.push(loadPlain(platforms[i].url + "/html/" + ids[i].join(',')));
+            //contentReady.push(loadPlain(platforms[i].url + "/details_html?ids=" + ids[i].join(',')));
             idxs.push(i);
           }
         }
