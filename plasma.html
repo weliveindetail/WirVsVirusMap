@@ -395,17 +395,9 @@
       return false;
     }
 
-    // TODO: Only for demo purpose
-    //const demoPlatformsStr = 'Demo ImmunHelden.de|https://immunhelden.de/map,Demo Static|https://weliveindetail.github.io/WirVsVirusMap/demo_static'
-    const plasmaPlatfromStr = '#SpendeCOVIDPlasma|https://immunhelden.github.io/WirVsVirusMap/demo_plasma';
-    const defaultPlatformsStr = plasmaPlatfromStr;
-
-    function parsePlatforms(params) {
-      const platformsStr = decodeURIComponent(params.platforms || defaultPlatformsStr);
-      return platformsStr.split(',').map(function(pair) {
-        const nameUrlArray = pair.split('|');
-        return { "name": nameUrlArray[0], "url": nameUrlArray[1] };
-      });
+    function parseBaseUrl(url) {
+      const qpos = url.indexOf('?');
+      return qpos > 0 ? url.substring(0, qpos) : url;
     }
 
     function parseUrlParams(url) {
@@ -416,6 +408,22 @@
         params[match[1]] = match[2];
       }
       return params;
+    }
+
+    // TODO: Only for demo purpose
+    //const demoPlatformsStr = 'Demo ImmunHelden.de|https://immunhelden.de/map,Demo Static|https://weliveindetail.github.io/WirVsVirusMap/demo_static'
+    const baseUrl = parseBaseUrl(window.location.href);
+    const baseUrlDir = baseUrl.substring(0, baseUrl.length - 12);
+    console.log(baseUrlDir);
+    const plasmaPlatfromStr = '#SpendeCOVIDPlasma|' + baseUrlDir + '/demo_plasma';
+    const defaultPlatformsStr = plasmaPlatfromStr;
+
+    function parsePlatforms(params) {
+      const platformsStr = decodeURIComponent(params.platforms || defaultPlatformsStr);
+      return platformsStr.split(',').map(function(pair) {
+        const nameUrlArray = pair.split('|');
+        return { "name": nameUrlArray[0], "url": nameUrlArray[1] };
+      });
     }
 
     function createBaseLayer() {
