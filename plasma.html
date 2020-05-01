@@ -60,20 +60,22 @@
     }
     #osm-map-details {
       margin: 0;
+      border: 0;
+      width: 100%;
       height: calc(100% - 2rem);
       overflow: scroll;
     }
-    #osm-map-details > div {
-      padding: 1rem;
-      box-sizing: border-box;
-    }
     #osm-map-pane-close {
-      width: 100%;
+      position: absolute;
+      z-index: 10004;
+      bottom: 0px;
+      right: 0px;
+      width: 400px;
       height: 2rem;
-      text-align: center;
       background-color: #eee;
-      padding: 0.4rem 0;
-      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     img.spin-loading {
       width: 100%;
@@ -361,8 +363,7 @@
   <div id="osm-map"></div>
   <div id="osm-map-lock"></div>
   <div id="osm-map-pane">
-    <div id="osm-map-details">
-    </div>
+    <iframe id="osm-map-details" sandbox="allow-forms"></iframe>
     <div id="osm-map-pane-close">
       <a href="#" onclick="closeDetails();" style="display: block;">
         Einklappen &gt;&gt;
@@ -583,7 +584,7 @@
       }
 
 
-      $("#osm-map-details").html('<img src="images/spin_loading.gif" class="spin-loading">');
+      $("#osm-map-details").attr("srcdoc", '<img src="images/spin_loading.gif" class="spin-loading">');
       $("#osm-map-pane").show();
       $("#osm-map").css("width", "calc(100% - 400px)");
 
@@ -596,7 +597,7 @@
       //$("#platforms-pane").hide();
 
       if (pinInfo.hasOwnProperty("cachedDetails")) {
-        $("#osm-map-details").html(pinInfo.cachedDetails);
+        $("#osm-map-details").attr("srcdoc", pinInfo.cachedDetails);
       }
       else {
         loadPlain(platforms[pinInfo.platformIdx].url + "/html/" + id).then(
@@ -604,8 +605,8 @@
             // TODO: It should be sufficient if the id property of
             // the div CONTAINS the given id!
             console.log(html);
-            $("#osm-map-details").html(html);
             pinInfo.cachedDetails = html;
+            $("#osm-map-details").attr("srcdoc", pinInfo.cachedDetails);
           },
           err => closeDetails()
         );
