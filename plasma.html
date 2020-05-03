@@ -585,6 +585,8 @@
 //      allPinsById[id].popup.addTo(map);
 //    }
 
+  let root;
+
     function viewDetails(id) {
       if (!allPinsById.hasOwnProperty(id)) {
         console.error("Requested invalid ID");
@@ -604,19 +606,20 @@
       map.panTo(L.latLng(pinInfo.latlng));
       //$("#platforms-pane").hide();
 
-      if (pinInfo.hasOwnProperty("cachedDetails")) {
-        $("#osm-map-details").attr("srcdoc", pinInfo.cachedDetails);
+      if (pinInfo.hasOwnProperty("details")) {
+        $("#osm-map-details").attr("srcdoc", pinInfo.details.html());
       }
       else {
-        loadPlain(platforms[pinInfo.platformIdx].url + "/html/" + id).then(
+        const contentBaseUrl = platforms[pinInfo.platformIdx].url + "/html/";
+        loadPlain(contentBaseUrl + id).then(
           html => {
-            // TODO: It should be sufficient if the id property of
-            // the div CONTAINS the given id!
-            console.log(html);
-            pinInfo.cachedDetails = html;
-            $("#osm-map-details").attr("srcdoc", pinInfo.cachedDetails);
+            pinInfo.details = $('<div><base href="' + contentBaseUrl + '" target="_blank">' + html + '</div>');
+            $("#osm-map-details").attr("srcdoc", pinInfo.details.html());
           },
-          err => closeDetails()
+          err => {
+            console.error("Error repsonse from: ", contentBaseUrl + id);
+            closeDetails()
+          }
         );
       }
     }

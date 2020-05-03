@@ -1,0 +1,24 @@
+
+.institutions__data a:link, .institutions__data a:visited, .institutions__data a:hover, .institutions__data a:active {
+  color: #931814;
+}
+.institutions__data > div {
+  padding-bottom: 10px;
+}
+.institutions__chunk {
+  display: flex;
+}
+.icon--contact-phone_s {
+  background: url('images/symbol-phone.png');
+  background-size: contain;
+  width: 1.15rem;
+  height: 1.1rem;
+  margin-right: 0.2rem;
+}
+.icon--contact_website_s {
+  background: url('images/symbol-website.png');
+  background-size: contain;
+  width: 1.15rem;
+  height: 1.1rem;
+  margin-right: 0.2rem;
+}
