@@ -1,0 +1,392 @@
+[
+  {
+    "title": "Blutspende am Universitätsklinikum Freiburg",
+    "contact": "Blutspendezentrale Haus Langerhans",
+    "address": "Hugstetter Str. 55, 79106 Freiburg",
+    "phone": "0761 2704444",
+    "url": "http://www.uniklinik-freiburg.de/blutspende/live/index.html"
+  },
+  {
+    "title": "CSL Plasma Kiel",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0431/661690",
+    "address": "Sophienblatt 98/100, 24114 Kiel",
+    "phone": "0431/661690"
+  },
+  {
+    "title": "Octapharma Plasma Mannheim",
+    "address": "Heinrich-von-Stephan-Str. 5, 68161 Mannheim",
+    "phone": "0621 8191090",
+    "email": "pzman-mannheim@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/mannheim"
+  },
+  {
+    "title": "CSL Plasma Nürnberg",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0911/22911",
+    "address": "Pfannenschmiedsgasse 5, 90402 Nürnberg",
+    "phone": "0911/22911"
+  },
+  {
+    "title": "Haema Plasmaspendezentrum Bayreuth",
+    "contact": "RKP-Spende (COVID-19) Mail: covid19@haema.de",
+    "address": "Spinnereistraße 5b, 95445 Bayreuth",
+    "phone": "0921 4040",
+    "url": "www.haema.de/blutspendezentren/bayern/bayreuth.html"
+  },
+  {
+    "title": "Plasmazentrum Würzburg",
+    "contact": "Kontaktaufnahme über Homepage: http://www.blutspendedienst.com/",
+    "address": "Virchowstraße 22, 97072 Würzburg"
+  },
+  {
+    "title": "CSL Plasma Berlin",
+    "address": "Axel-Springer-Str. 42, 10969 Berlin",
+    "phone": "030/2537470"
+  },
+  {
+    "title": "Octapharma Plasma Berlin-Köpenick",
+    "address": "Pablo-Neruda-Straße 2-4, 12559 Berlin-Köpenick",
+    "phone": "030 64387820",
+    "email": "koepenick@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/berlin-koepenick"
+  },
+  {
+    "title": "Octapharma Plasma Berlin-Spandau",
+    "address": "Streitstraße 13, 13587 Berlin",
+    "phone": "030 30105920",
+    "email": "spandau@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/berlin-spandau"
+  },
+  {
+    "title": "Octapharma Plasma Potsdam",
+    "address": "Babelsberger Str. 16, 14473 Potsdam",
+    "phone": "0331 5816590",
+    "email": "potsdam@octapharmaplasma.de",
+    "url": "www.octapharmaplasma.de/standorte/potsdam         "
+  },
+  {
+    "title": "CSL Plasma Bremen",
+    "address": "An der Weide 27-29, 28195 Bremen",
+    "phone": "0421/173640"
+  },
+  {
+    "title": "Blutspendedienst Hamburg City",
+    "address": "Hamburg",
+    "phone": "040 2000 2200",
+    "email": "info@blutspendehamburg.de"
+  },
+  {
+    "title": "CSL Plasma Frankfurt a. M.",
+    "address": "Stiftstraße 9-17, 60313 Frankfurt"
+  },
+  {
+    "title": "Universitätsklinikum Giessen",
+    "address": "Langhansstraße 7, 35385 Gießen",
+    "phone": "0641/985-41506",
+    "url": "http://www.ukgm.de/blutspende"
+  },
+  {
+    "title": "Ernst-Moritz-Arndt-Universität Greifswald Medizinische Fakultät",
+    "address": "Ferdinand-Sauerbruch-Straße 17475 Greifswald",
+    "phone": "03834/86-5478"
+  },
+  {
+    "title": "Blutspendedienst DRK NSTOB Oldenburg",
+    "contact": "lutspendedienst der Landesverbände des DRK NSTOB gGmbH",
+    "address": "Brandenburger Straße 21, 26133 Oldenburg",
+    "phone": "0441 9440118",
+    "email": "plasma@bsd-nstob.de",
+    "url": "www.blutspende-nstob.de/Indoor/Blutspendedienst/Institute/Oldenburg"
+  },
+  {
+    "title": "CSL Plasma Braunschweig",
+    "address": "Burgpassage 7, 38100 Braunschweig",
+    "phone": "0531/243560"
+  },
+  {
+    "title": "CSL Plasma Göttingen",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0551/495060",
+    "address": "Weender Straße 80-82, 37073 Göttingen",
+    "phone": "0551/495060"
+  },
+  {
+    "title": "Klinikum Wolfsburg",
+    "address": "Sauerbruchstr. 7, 38440 Wolfsburg",
+    "phone": "05361 801727",
+    "email": "blutspende@klinikum.wolfsburg.de",
+    "url": "https://www.klinikum.wolfsburg.de/kliniken/institute-und-zentren/institut-fuer-labormedizin/blutspende"
+  },
+  {
+    "title": "Blutspendezentrale im Universitätsklinikum Düsseldorf",
+    "contact": "Zentrum für Operative Medizin I / Alte Chirurgie, Geb. 12.43",
+    "address": "Moorenstraße 5, 40225 Düsseldorf",
+    "phone": "0211 8118575",
+    "url": "www.uni-blutspende.de"
+  },
+  {
+    "title": "CSL Plasma Bielefeld",
+    "address": "Niederwall 1-3; 33602 Bielefeld",
+    "phone": "0521/967270"
+  },
+  {
+    "title": "DRK Zentrum für Transfusionsmedizin Münster",
+    "address": "Sperlichstraße 15, 48151 Münster",
+    "phone": "0251 709277",
+    "email": "muenster@bsdwest.de",
+    "url": "https://www.blutspendedienst-west.de/blutspendedienst/standorte/muenster"
+  },
+  {
+    "title": "Octapharma Plasma Aachen",
+    "address": "Peterstraße 20-24, 52062 Aachen",
+    "phone": "0241 4001550",
+    "email": "pzman-aachen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/aachen"
+  },
+  {
+    "title": "octapharma Plasma Hagen",
+    "address": "Hohenzollernstraße 5, 58095 Hagen",
+    "phone": "02331 348810",
+    "email": "pzman-hagen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/hagen"
+  },
+  {
+    "title": "octapharma Plasma Krefeld",
+    "address": "Petersstraße 122, Behnisch Haus, Eingang A, 3. OG, 47798 Krefeld",
+    "phone": "02151 569050",
+    "email": "krefeld@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/krefeld"
+  },
+  {
+    "title": "octapharma Plasma Mönchengladbach",
+    "address": "Lürriper Str. 11, 41065 Mönchengladbach",
+    "phone": "02161 463430",
+    "email": "pzman-moenchengladbach@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/moenchengladbach"
+  },
+  {
+    "title": "octapharma Plasma Oberhausen",
+    "address": "Concordiastraße 32 <br/>46049 Oberhausen",
+    "phone": "0208 9418770",
+    "email": "pzman-oberhausen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/oberhausen"
+  },
+  {
+    "title": "octapharma Plasma Koblenz",
+    "address": "Löhrstraße 23, 56068 Koblenz",
+    "phone": "0261 973760",
+    "email": "pzman-koblenz@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/koblenz             "
+  },
+  {
+    "title": "Haema Blutspendezentrum Dresden-Fetscherplatz",
+    "contact": "Haema Blutspendezentrum Dresden-Fetscherplatz",
+    "address": "Fetscherplatz 2a, 01307 Dresden",
+    "phone": "0351 2166810",
+    "url": "www.haema.de/blutspendezentren/sachsen/dresden-fetscherplatz.html"
+  },
+  {
+    "title": "Octapharma Plasma Dresden",
+    "address": "Altmarkt-Galerie, Webergasse 1, 01067 Dresden"
+  },
+  {
+    "title": "octapharma Plasma Dessau",
+    "address": "Kavalierstraße 49, Rathaus-Center, 06844 Dessau",
+    "phone": "0340 216410",
+    "email": "pzman-dessau@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/dessau"
+  },
+  {
+    "title": "Blutspende am Universitätsklinikum Freiburg",
+    "contact": "Blutspendezentrale Haus Langerhans",
+    "address": "Hugstetter Str. 55, 79106 Freiburg",
+    "phone": "0761 2704444",
+    "url": "http://www.uniklinik-freiburg.de/blutspende/live/index.html"
+  },
+  {
+    "title": "CSL Plasma Kiel",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0431/661690",
+    "address": "Sophienblatt 98/100, 24114 Kiel",
+    "phone": "0431/661690"
+  },
+  {
+    "title": "Octapharma Plasma Mannheim",
+    "address": "Heinrich-von-Stephan-Str. 5, 68161 Mannheim",
+    "phone": "0621 8191090",
+    "email": "pzman-mannheim@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/mannheim"
+  },
+  {
+    "title": "CSL Plasma Nürnberg",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0911/22911",
+    "address": "Pfannenschmiedsgasse 5, 90402 Nürnberg",
+    "phone": "0911/22911"
+  },
+  {
+    "title": "Haema Plasmaspendezentrum Bayreuth",
+    "contact": "RKP-Spende (COVID-19) Mail: covid19@haema.de",
+    "address": "Spinnereistraße 5b, 95445 Bayreuth",
+    "phone": "0921 4040",
+    "url": "www.haema.de/blutspendezentren/bayern/bayreuth.html"
+  },
+  {
+    "title": "Plasmazentrum Würzburg",
+    "contact": "Kontaktaufnahme über Homepage: http://www.blutspendedienst.com/",
+    "address": "Virchowstraße 22, 97072 Würzburg"
+  },
+  {
+    "title": "CSL Plasma Berlin",
+    "address": "Axel-Springer-Str. 42, 10969 Berlin",
+    "phone": "030/2537470"
+  },
+  {
+    "title": "Octapharma Plasma Berlin-Köpenick",
+    "address": "Pablo-Neruda-Straße 2-4, 12559 Berlin-Köpenick",
+    "phone": "030 64387820",
+    "email": "koepenick@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/berlin-koepenick"
+  },
+  {
+    "title": "Octapharma Plasma Berlin-Spandau",
+    "address": "Streitstraße 13, 13587 Berlin",
+    "phone": "030 30105920",
+    "email": "spandau@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/berlin-spandau"
+  },
+  {
+    "title": "Octapharma Plasma Potsdam",
+    "address": "Babelsberger Str. 16, 14473 Potsdam",
+    "phone": "0331 5816590",
+    "email": "potsdam@octapharmaplasma.de",
+    "url": "www.octapharmaplasma.de/standorte/potsdam         "
+  },
+  {
+    "title": "CSL Plasma Bremen",
+    "address": "An der Weide 27-29, 28195 Bremen",
+    "phone": "0421/173640"
+  },
+  {
+    "title": "Blutspendedienst Hamburg City",
+    "address": "Hamburg",
+    "phone": "040 2000 2200",
+    "email": "info@blutspendehamburg.de"
+  },
+  {
+    "title": "CSL Plasma Frankfurt a. M.",
+    "address": "Stiftstraße 9-17, 60313 Frankfurt"
+  },
+  {
+    "title": "Universitätsklinikum Giessen",
+    "address": "Langhansstraße 7, 35385 Gießen",
+    "phone": "0641/985-41506",
+    "url": "http://www.ukgm.de/blutspende"
+  },
+  {
+    "title": "Ernst-Moritz-Arndt-Universität Greifswald Medizinische Fakultät",
+    "address": "Ferdinand-Sauerbruch-Straße 17475 Greifswald",
+    "phone": "03834/86-5478"
+  },
+  {
+    "title": "Blutspendedienst DRK NSTOB Oldenburg",
+    "contact": "lutspendedienst der Landesverbände des DRK NSTOB gGmbH",
+    "address": "Brandenburger Straße 21, 26133 Oldenburg",
+    "phone": "0441 9440118",
+    "email": "plasma@bsd-nstob.de",
+    "url": "www.blutspende-nstob.de/Indoor/Blutspendedienst/Institute/Oldenburg"
+  },
+  {
+    "title": "CSL Plasma Braunschweig",
+    "address": "Burgpassage 7, 38100 Braunschweig",
+    "phone": "0531/243560"
+  },
+  {
+    "title": "CSL Plasma Göttingen",
+    "contact": "RKP-Spende (COVID-19) Telefon: 0551/495060",
+    "address": "Weender Straße 80-82, 37073 Göttingen",
+    "phone": "0551/495060"
+  },
+  {
+    "title": "Klinikum Wolfsburg",
+    "address": "Sauerbruchstr. 7, 38440 Wolfsburg",
+    "phone": "05361 801727",
+    "email": "blutspende@klinikum.wolfsburg.de",
+    "url": "https://www.klinikum.wolfsburg.de/kliniken/institute-und-zentren/institut-fuer-labormedizin/blutspende"
+  },
+  {
+    "title": "Blutspendezentrale im Universitätsklinikum Düsseldorf",
+    "contact": "Zentrum für Operative Medizin I / Alte Chirurgie, Geb. 12.43",
+    "address": "Moorenstraße 5, 40225 Düsseldorf",
+    "phone": "0211 8118575",
+    "url": "www.uni-blutspende.de"
+  },
+  {
+    "title": "CSL Plasma Bielefeld",
+    "address": "Niederwall 1-3; 33602 Bielefeld",
+    "phone": "0521/967270"
+  },
+  {
+    "title": "DRK Zentrum für Transfusionsmedizin Münster",
+    "address": "Sperlichstraße 15, 48151 Münster",
+    "phone": "0251 709277",
+    "email": "muenster@bsdwest.de",
+    "url": "https://www.blutspendedienst-west.de/blutspendedienst/standorte/muenster"
+  },
+  {
+    "title": "Octapharma Plasma Aachen",
+    "address": "Peterstraße 20-24, 52062 Aachen",
+    "phone": "0241 4001550",
+    "email": "pzman-aachen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/aachen"
+  },
+  {
+    "title": "octapharma Plasma Hagen",
+    "address": "Hohenzollernstraße 5, 58095 Hagen",
+    "phone": "02331 348810",
+    "email": "pzman-hagen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/hagen"
+  },
+  {
+    "title": "octapharma Plasma Krefeld",
+    "address": "Petersstraße 122, Behnisch Haus, Eingang A, 3. OG, 47798 Krefeld",
+    "phone": "02151 569050",
+    "email": "krefeld@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/krefeld"
+  },
+  {
+    "title": "octapharma Plasma Mönchengladbach",
+    "address": "Lürriper Str. 11, 41065 Mönchengladbach",
+    "phone": "02161 463430",
+    "email": "pzman-moenchengladbach@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/moenchengladbach"
+  },
+  {
+    "title": "octapharma Plasma Oberhausen",
+    "address": "Concordiastraße 32 <br/>46049 Oberhausen",
+    "phone": "0208 9418770",
+    "email": "pzman-oberhausen@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/oberhausen"
+  },
+  {
+    "title": "octapharma Plasma Koblenz",
+    "address": "Löhrstraße 23, 56068 Koblenz",
+    "phone": "0261 973760",
+    "email": "pzman-koblenz@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/koblenz             "
+  },
+  {
+    "title": "Haema Blutspendezentrum Dresden-Fetscherplatz",
+    "contact": "Haema Blutspendezentrum Dresden-Fetscherplatz",
+    "address": "Fetscherplatz 2a, 01307 Dresden",
+    "phone": "0351 2166810",
+    "url": "www.haema.de/blutspendezentren/sachsen/dresden-fetscherplatz.html"
+  },
+  {
+    "title": "Octapharma Plasma Dresden",
+    "address": "Altmarkt-Galerie, Webergasse 1, 01067 Dresden"
+  },
+  {
+    "title": "octapharma Plasma Dessau",
+    "address": "Kavalierstraße 49, Rathaus-Center, 06844 Dessau",
+    "phone": "0340 216410",
+    "email": "pzman-dessau@octapharmaplasma.de",
+    "url": "https://www.octapharmaplasma.de/standorte/dessau"
+  }
+]
