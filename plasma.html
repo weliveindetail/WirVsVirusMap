@@ -342,7 +342,7 @@
   <div id="osm-map-lock"></div>
   <div id="osm-map-pane">
     <!-- Allow scripts temporarily to initiate follow-up dialog -->
-    <iframe id="osm-map-details" sandbox="allow-forms allow-scripts allow-popups"></iframe>
+    <iframe id="osm-map-details" sandbox="allow-forms allow-scripts allow-popups allow-top-navigation-by-user-activation"></iframe>
     <div id="osm-map-pane-close">
       <a href="#" onclick="closeDetails();" style="display: block;">
         Einklappen &gt;&gt;
@@ -603,7 +603,17 @@
 
             const followupHandler =
               'setTimeout(function() { document.getElementById("followup").style.display="flex"; }, 500)';
-            pinInfo.details.find('a').each((i, elem) => $(elem).attr('onclick', followupHandler));
+            pinInfo.details.find('a').each((i, elem) => {
+              const targetUrl = $(elem).attr('href');
+              if (targetUrl && targetUrl.hasOwnProperty('length') && targetUrl.length > 0) {
+                if (targetUrl.charAt(0) == '#') {
+                  $(elem).attr('href', baseUrl + targetUrl);
+                }
+                else {
+                  $(elem).attr('onclick', followupHandler);
+                }
+              }
+            });
             pinInfo.details.children('div').each((i, elem) => $(elem).css('margin-left', '25px').css('margin-right', '10px'));
             pinInfo.details.append(followupHtml);
 
@@ -697,11 +707,16 @@
       if (allPinsById.hasOwnProperty(id)) {
         allPinsById[id].popup.openPopup();
         viewDetails(id);
+        map.flyTo(allPinsById[id].latlng, 12, {
+          animate: true,
+          duration: 3
+        });
         return;
       }
       // TODO: Should we have a ID-lookup for regions?
       for (var ags in allRegionsByAgs) {
-        if (allRegionsByAgs[ags].ids.indexOf(preselectId) != -1) {
+        if (allRegionsByAgs[ags].ids &&
+            allRegionsByAgs[ags].ids.indexOf(preselectId) != -1) {
           // TODO: User might need to scroll down.
           viewDetailsR(ags);
           return;
@@ -933,6 +948,14 @@
     });
 
     Promise.all(pinsReady.concat([regionsReady])).then(function() {
+      let preselectId = parseAnchor(window.location.href);
+      console.log(preselectId);
+      if (preselectId) {
+        selectId(preselectId);
+      }
+    });
+
+    $(window).on('hashchange', function(e) {
       let preselectId = parseAnchor(window.location.href);
       console.log(preselectId);
       if (preselectId) {
