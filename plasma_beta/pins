@@ -1,4 +1,132 @@
 {
+  "blutspendende-ANgrgDOAj9_": {
+    "type": 0,
+    "title": "Blutspende Klinikum Dortmund",
+    "latlng": [
+      51.5085785,
+      7.4548637
+    ]
+  },
+  "blutspendende-gLsLj0i5zmY": {
+    "type": 0,
+    "title": "Blutspende am Universitätsklinikum Münster",
+    "latlng": [
+      51.961253,
+      7.594183
+    ]
+  },
+  "blutspendende-qI6kXiGxv6M": {
+    "type": 0,
+    "title": "Blutspende im Universitätsklinikum Essen",
+    "latlng": [
+      51.43510405,
+      6.98877708984299
+    ]
+  },
+  "blutspendende-7wZqQN8AB_t": {
+    "type": 0,
+    "title": "Blutspendedienst der Uniklinik RWTH Aachen",
+    "latlng": [
+      50.7769086,
+      6.04457271641676
+    ]
+  },
+  "blutspendende-txvzoFOYbmR": {
+    "type": 0,
+    "title": "Blutspendedienst des Uniklinikums Bonn (UKB)",
+    "latlng": [
+      53.847953,
+      10.68847
+    ]
+  },
+  "blutspendende-WYZoKLlTu43": {
+    "type": 0,
+    "title": "Blutspendezentrale Uniklinik Köln",
+    "latlng": [
+      50.9235243,
+      6.9173241
+    ]
+  },
+  "blutspendende-tGvGHPNYTsG": {
+    "type": 0,
+    "title": "Blutspendezentrale im Universitätsklinikum Düsseldorf",
+    "latlng": [
+      51.19596785,
+      6.78982079482326
+    ]
+  },
+  "blutspendende-zExrdyl_Amt": {
+    "type": 0,
+    "title": "Blutspendezentrum Duisburg BZD",
+    "latlng": [
+      51.4325344,
+      6.7717195
+    ]
+  },
+  "blutspendende-LOWHPfqJUvX": {
+    "type": 0,
+    "title": "Blutspendezentrum Gelsenkirchen BZG",
+    "latlng": [
+      51.5076175,
+      7.0994179
+    ]
+  },
+  "blutspendende-9hP1gEZ9Law": {
+    "type": 0,
+    "title": "Blutspendezentrum Oberhausen BZO",
+    "latlng": [
+      51.4881853,
+      6.8794411
+    ]
+  },
+  "blutspendende-DqDW7hLMRDi": {
+    "type": 0,
+    "title": "Blutspendezentrum Wuppertal BZW",
+    "latlng": [
+      37.962669,
+      -87.565171
+    ]
+  },
+  "blutspendende-CqIcTHfK7bC": {
+    "type": 0,
+    "title": "CSL Plasma Bielefeld",
+    "latlng": [
+      52.0228056,
+      8.5336965
+    ]
+  },
+  "blutspendende-niJaRONxBKk": {
+    "type": 0,
+    "title": "DRK Zentrum für Transfusionsmedizin Münster",
+    "latlng": [
+      51.94699565,
+      7.61232600004316
+    ]
+  },
+  "blutspendende-33W45wyVj8w": {
+    "type": 0,
+    "title": "Haema Blutspendezentrum Bonn",
+    "latlng": [
+      50.7333403,
+      7.09737580512489
+    ]
+  },
+  "blutspendende-Uhu4XlpBelG": {
+    "type": 0,
+    "title": "Haema Blutspendezentrum Dortmund",
+    "latlng": [
+      51.5144349,
+      7.4671672
+    ]
+  },
+  "blutspendende-cEnqDbJa1L9": {
+    "type": 0,
+    "title": "Haema Blutspendezentrum Essen",
+    "latlng": [
+      51.4576948,
+      7.01330119660346
+    ]
+  },
   "blutspendende-OcbzZGM0bPz": {
     "type": 0,
     "title": "Haema Blutspendezentrum Hamm",
@@ -75,8 +203,8 @@
     "type": 0,
     "title": "Blutspendedienst am Universitätsklinikum des Saarlandes Homburg",
     "latlng": [
-      47.512962,
-      7.771586
+      49.3121252,
+      7.34279567309359
     ]
   },
   "blutspendende-CkPPZppfaQN": {
@@ -763,8 +891,8 @@
     "type": 0,
     "title": "DRK-Blutspendedienst Frankfurt am Main",
     "latlng": [
-      50.041821,
-      8.584764
+      50.0922081,
+      8.65391712434577
     ]
   },
   "blutspendende-6_GJrW2SL6w": {
@@ -845,110 +973,6 @@
     "latlng": [
       52.2623702,
       10.5215966
-    ]
-  },
-  "blutspendende-QltdtTyS9YC": {
-    "type": 0,
-    "title": "CSL Plasma Göttingen",
-    "latlng": [
-      51.536292,
-      9.93517542331372
-    ]
-  },
-  "blutspendende-bQNJ5rCkUiX": {
-    "type": 0,
-    "title": "Klinikum Wolfsburg",
-    "latlng": [
-      52.4134191,
-      10.7683898460708
-    ]
-  },
-  "blutspendende-OnT9FRMnKkg": {
-    "type": 0,
-    "title": "MHH Blutspendedienst Hannover",
-    "latlng": [
-      52.38359095,
-      9.8043497513613
-    ]
-  },
-  "blutspendende-ANgrgDOAj9_": {
-    "type": 0,
-    "title": "Blutspende Klinikum Dortmund",
-    "latlng": [
-      51.5085785,
-      7.4548637
-    ]
-  },
-  "blutspendende-gLsLj0i5zmY": {
-    "type": 0,
-    "title": "Blutspende am Universitätsklinikum Münster",
-    "latlng": [
-      51.961253,
-      7.594183
-    ]
-  },
-  "blutspendende-qI6kXiGxv6M": {
-    "type": 0,
-    "title": "Blutspende im Universitätsklinikum Essen",
-    "latlng": [
-      51.43510405,
-      6.98877708984299
-    ]
-  },
-  "blutspendende-7wZqQN8AB_t": {
-    "type": 0,
-    "title": "Blutspendedienst der Uniklinik RWTH Aachen",
-    "latlng": [
-      50.7769086,
-      6.04457271641676
-    ]
-  },
-  "blutspendende-txvzoFOYbmR": {
-    "type": 0,
-    "title": "Blutspendedienst des Uniklinikums Bonn (UKB)",
-    "latlng": [
-      53.847953,
-      10.68847
-    ]
-  },
-  "blutspendende-WYZoKLlTu43": {
-    "type": 0,
-    "title": "Blutspendezentrale Uniklinik Köln",
-    "latlng": [
-      50.9235243,
-      6.9173241
-    ]
-  },
-  "blutspendende-tGvGHPNYTsG": {
-    "type": 0,
-    "title": "Blutspendezentrale im Universitätsklinikum Düsseldorf",
-    "latlng": [
-      51.19596785,
-      6.78982079482326
-    ]
-  },
-  "blutspendende-zExrdyl_Amt": {
-    "type": 0,
-    "title": "Blutspendezentrum Duisburg BZD",
-    "latlng": [
-      51.4325344,
-      6.7717195
-    ]
-  },
-  "blutspendende-LOWHPfqJUvX": {
-    "type": 0,
-    "title": "Blutspendezentrum Gelsenkirchen BZG",
-    "latlng": [
-      51.5076175,
-      7.0994179
-    ]
-  },
-  "blutspendende-9hP1gEZ9Law": {
-    "type": 0,
-    "title": "Blutspendezentrum Oberhausen BZO",
-    "latlng": [
-      51.4881853,
-      6.8794411
     ]
   }
 }
