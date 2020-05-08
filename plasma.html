@@ -375,8 +375,14 @@
     }
 
     function parseBaseUrl(url) {
-      const qpos = url.indexOf('?');
-      return qpos > 0 ? url.substring(0, qpos) : url;
+      const regex = /[^?#]+/g;
+      const match = regex.exec(url);
+      return match.hasOwnProperty('0') ? match[0] : null;
+    }
+
+    function parseAnchor(url) {
+      const apos = url.lastIndexOf('#');
+      return (apos > 0 && apos < url.length - 1) ? url.substring(apos + 1) : null;
     }
 
     function parseUrlParams(url) {
@@ -927,12 +933,10 @@
     });
 
     Promise.all(pinsReady.concat([regionsReady])).then(function() {
-      // TODO: Only for demo purpose!
-      //if (!params.hasOwnProperty("select")) {
-      //  params.select = "-M3l5s6sP2Jv42nq16rl";
-      //}
-      if (params.hasOwnProperty("select")) {
-        selectId(params.select);
+      let preselectId = parseAnchor(window.location.href);
+      console.log(preselectId);
+      if (preselectId) {
+        selectId(preselectId);
       }
     });
 
