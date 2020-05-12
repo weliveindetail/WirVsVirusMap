@@ -59,24 +59,31 @@
       bottom: 0px;
       display: none;
     }
+    @media only screen and (max-width: 600px) {
+      #osm-map-pane {
+        width: 100%;
+      }
+    }
     #osm-map-details {
       margin: 0;
       border: 0;
       width: 100%;
-      height: calc(100% - 2rem);
+      /*height: calc(100% - 2rem);*/
       overflow: scroll;
+      flex: auto;
     }
     #osm-map-pane-close {
       position: absolute;
       z-index: 10004;
       bottom: 0px;
       right: 0px;
-      width: 400px;
+      width: 100%;
       height: 2rem;
       background-color: #eee;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex: none;
     }
     img.spin-loading {
       width: 100%;
@@ -598,7 +605,9 @@
       // TODO: if there's space left for the map at all
       map.invalidateSize();
       map.panTo(L.latLng(pinInfo.latlng));
-      //$("#platforms-pane").hide();
+      if () {
+        $("#osm-map").hide();
+      }
 
       if (pinInfo.hasOwnProperty("details")) {
         $("#osm-map-details").attr("srcdoc", pinInfo.details.html());
@@ -708,8 +717,8 @@
     function closeDetails() {
       $("#osm-map-pane").hide();
       $("#osm-map").css("width", "100%");
+      $("#osm-map").show();
       map.invalidateSize();
-      //$("#platforms-pane").show();
     }
 
     function selectId(id) {
@@ -966,12 +975,8 @@
 
     $(document).ready(function() {
       const newWidth = $('#header').width();
-      if (newWidth < 175) {
-        $('#header').css('font-size', (newWidth / 14) + 'px');
-      }
-      else {
-        $('#header').css('font-size', '16px');
-      }
+      const fontSize = (newWidth < 175) ? (newWidth / 14) : 16;
+      $('#header').css('font-size', fontSize + 'px');
     });
 
     $(window).on('hashchange', function(e) {
