@@ -605,9 +605,7 @@
       // TODO: if there's space left for the map at all
       map.invalidateSize();
       map.panTo(L.latLng(pinInfo.latlng));
-      if () {
-        $("#osm-map").hide();
-      }
+      //$("#osm-map").hide();
 
       if (pinInfo.hasOwnProperty("details")) {
         $("#osm-map-details").attr("srcdoc", pinInfo.details.html());
@@ -717,7 +715,7 @@
     function closeDetails() {
       $("#osm-map-pane").hide();
       $("#osm-map").css("width", "100%");
-      $("#osm-map").show();
+      //$("#osm-map").show();
       map.invalidateSize();
     }
 
